@@ -2,7 +2,7 @@
 *  @project whale
 *  @purpose javascript cache framework.
 *  @author Yori.Lu 
-*  @Email lzx56166141@163.com
+*  @Email yori_lu@163.com
 */
 
 (function() {
