@@ -1,5 +1,6 @@
 # whale
-a javascript cache framework
+		Whale is a javascript cache framework(Only 1.5kb).
+		Some storage strategy like [LFU], [LRU], [Random Cache], [Two queues], [FIFO] are available.
 
 If there have a huge javascript data to be resolved and need a javascript cache.
 You can try the whale framework.
