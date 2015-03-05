@@ -1,18 +1,18 @@
 #whale.js
 
-Whale is a javascript cache framework(Only 1.5kb).
+Whale.js is a javascript cache framework.
 
 Some storage strategy like [LFU], [LRU], [Random Cache], [Two queues], [FIFO] are available.
 
 If there have a huge javascript data to be resolved and need a javascript cache.
 
-You can try the whale framework.
+You can try it.
 
-It provide several method to help you.
+It provide several methods to help you.
 
 
 ### Example
-		//create a strategy of Least Frequently Used cache 
+		//create a strategy of LFU(Least Frequently Used) cache 
 		var c1 = whale.LFU({size:10});
 		c1.set('a','example a');
 		c1.get('a');// example a
@@ -24,4 +24,4 @@ It provide several method to help you.
 		var c4 = whale.FIFO({size:10}); //First in first out cahce
 		var c5 = whale.TwoQueue({size:10, L2Size: 30});//Two queue cache.  L2Size is treble than L1Size is to be recommended.
 ### Contact Me
-		If you meet any problem or find out any bug.
+		If any problem or find out any bug.
