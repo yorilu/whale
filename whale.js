@@ -72,6 +72,7 @@
     //Random cache
     whale.Random = function(param) {
         var set = function(key, value, cache) {
+            removeElement(key, cache);
             var index;
             if (cache.length >= param.size) {
                 index = getRandom(param.size - 1);
@@ -87,6 +88,7 @@
     //First in first out cache
     whale.FIFO = function(param) {
         var set = function(key, value, cache) {
+            removeElement(key, cache);
             if (cache.length >= param.size) {
                 cache.shift();
             }
@@ -98,6 +100,7 @@
     //Least recently used cache
     whale.LRU = function(param) {
         var set = function(key, value, cache) {
+            removeElement(key, cache);
             if (cache.length >= param.size) {
                 cache.sort(function(a, b) {
                     return a.t > b.t ? 1 : -1;
@@ -112,6 +115,7 @@
     //Least frequently used cache
     whale.LFU = function(param) {
         var set = function(key, value, cache) {
+            removeElement(key, cache);
             if (cache.length >= param.size) {
                 cache.sort(function(a, b) {
                     return a.h > b.h ? 1 : -1;
